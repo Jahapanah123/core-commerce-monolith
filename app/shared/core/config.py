@@ -44,6 +44,19 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int
     REFRESH_TOKEN_EXPIRE_DAYS: int
     
+    # OTP
+    OTP_LENGTH: int = 6
+    OTP_TTL_SECONDS: int = 300
+    OTP_MAX_ATTEMPTS: int = 3
+
+    # Twilio
+    TWILIO_ACCOUNT_SID: str
+    TWILIO_AUTH_TOKEN: str
+    TWILIO_PHONE_NUMBER: str
+
+    # Development
+    USE_MOCK_SMS: bool = True
+    
     @property
     def DATABASE_URL(self) -> str:
         return (
