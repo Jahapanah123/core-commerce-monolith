@@ -1,0 +1,24 @@
+[project]
+name = "python-orderservice"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Sonu Sharma",email = "dastansharma33@gmail.com"}
+]
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "python-jose[cryptography]",
+    "aio-pika",
+    "pydantic-settings",
+    "loguru",
+    "sqlalchemy[asyncio]",
+    "asyncpg",
+    "redis (>=8.0.0,<9.0.0)",
+    "twilio (>=9.10.9,<10.0.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

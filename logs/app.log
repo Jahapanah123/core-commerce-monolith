@@ -1,0 +1,13 @@
+2026-06-11 04:49:29.371 | INFO     | main:lifespan:24 - Starting application...
+2026-06-11 04:49:29.493 | ERROR    | app.shared.events.infra.rabbitmq:init_rabbitmq:84 - RabbitMQ init failed: [Errno 8] nodename nor servname provided, or not known
+2026-06-11 05:06:18.552 | INFO     | main:lifespan:24 - Starting application...
+2026-06-11 05:06:18.557 | ERROR    | app.shared.events.infra.rabbitmq:init_rabbitmq:84 - RabbitMQ init failed: [Errno 8] nodename nor servname provided, or not known
+2026-06-11 05:06:19.563 | ERROR    | app.shared.events.infra.rabbitmq:init_rabbitmq:84 - RabbitMQ init failed: [Errno 8] nodename nor servname provided, or not known
+2026-06-11 05:06:21.568 | ERROR    | app.shared.events.infra.rabbitmq:init_rabbitmq:84 - RabbitMQ init failed: [Errno 8] nodename nor servname provided, or not known
+2026-06-11 05:06:25.572 | ERROR    | app.shared.events.infra.rabbitmq:init_rabbitmq:84 - RabbitMQ init failed: [Errno 8] nodename nor servname provided, or not known
+2026-06-11 05:06:33.575 | ERROR    | app.shared.events.infra.rabbitmq:init_rabbitmq:84 - RabbitMQ init failed: [Errno 8] nodename nor servname provided, or not known
+2026-06-11 05:06:49.585 | ERROR    | app.shared.events.infra.rabbitmq:init_rabbitmq:84 - RabbitMQ init failed: [Errno 8] nodename nor servname provided, or not known
+2026-06-11 05:07:19.599 | ERROR    | app.shared.events.infra.rabbitmq:init_rabbitmq:84 - RabbitMQ init failed: [Errno 8] nodename nor servname provided, or not known
+2026-06-11 05:07:49.617 | ERROR    | app.shared.events.infra.rabbitmq:init_rabbitmq:84 - RabbitMQ init failed: [Errno 8] nodename nor servname provided, or not known
+2026-06-11 05:08:19.630 | ERROR    | app.shared.events.infra.rabbitmq:init_rabbitmq:84 - RabbitMQ init failed: [Errno 8] nodename nor servname provided, or not known
+2026-06-11 05:08:49.634 | ERROR    | app.shared.events.infra.rabbitmq:init_rabbitmq:84 - RabbitMQ init failed: [Errno 8] nodename nor servname provided, or not known

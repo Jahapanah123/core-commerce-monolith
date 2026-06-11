@@ -32,10 +32,21 @@ class Settings(BaseSettings):
     REDIS_PASSWORD: str | None = None
 
     # RabbitMQ Settings
-    RABBITMQ_USER: str
-    RABBITMQ_PASSWORD: str
-    RABBITMQ_HOST: str
-    RABBITMQ_PORT: int
+    RABBITMQ_URL: str
+    RABBITMQ_MAIN_EXCHANGE: str
+    RABBITMQ_MAIN_ROUTING_KEY: str
+    RABBITMQ_MAIN_QUEUE: str
+
+    RABBITMQ_RETRY_EXCHANGE: str
+    RABBITMQ_RETRY_ROUTING_KEY: str
+    RABBITMQ_RETRY_ROUTING_KEY_5: str
+    RABBITMQ_RETRY_ROUTING_KEY_10: str
+    RABBITMQ_RETRY_QUEUE_5: str
+    RABBITMQ_RETRY_QUEUE_10: str
+
+    RABBITMQ_DLQ_EXCHANGE: str
+    RABBITMQ_DLQ_ROUTING_KEY: str
+    RABBITMQ_DLQ_QUEUE: str
 
     # Security Settings
     JWT_SECRET_KEY: str
@@ -55,7 +66,7 @@ class Settings(BaseSettings):
     TWILIO_PHONE_NUMBER: str
 
     # Development
-    USE_MOCK_SMS: bool = True
+    USE_MOCK_SMS: bool = False
     
     @property
     def DATABASE_URL(self) -> str:
