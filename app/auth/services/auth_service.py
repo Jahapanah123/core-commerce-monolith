@@ -9,13 +9,12 @@ class AuthService:
         self.otp_storage = otp_storage
         self.publisher = publisher
 
-    async def get_otp(self, mobile: str):
+    async def send_otp(self, mobile: str):
         otp = generate_otp()
         logger.info(f"Generated OTP for {mobile}")
 
-        otp_hash = hash_otp(otp)
 
-        await self.otp_storage.store_otp(mobile, otp_hash)
+        await self.otp_storage.store_otp(mobile, otp)
         logger.info(f"Stored OTP hash in cache for {mobile}")
 
         await self.publisher.publish_sms_job(mobile, otp)

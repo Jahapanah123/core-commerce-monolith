@@ -5,13 +5,13 @@ from app.shared.core.exceptions import OTPExpiredException, OTPInvalidException
 
 router = APIRouter(prefix="/auth", tags=["OTP Authentication"])
 
-@router.post("/get-otp")
-async def get_otp(
+@router.post("/send-otp")
+async def send_otp(
     request: Request,
     payload: SendOTPRequest,
 ):
     service = request.app.state.auth_service
-    return await service.get_otp(payload.mobile)
+    return await service.send_otp(payload.mobile)
 
 @router.post("/verify-otp")
 async def verify_otp(
